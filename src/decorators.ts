@@ -47,7 +47,7 @@ class AiFnExecutor {
 
     private constructor() {
         this._llm = new OpenAI({
-            modelName: process.env.OPENAI_MODEL,
+            modelName: process.env.OPENAI_MODEL || 'gpt-3.5-turbo',
             temperature: 0,
         });
     }
