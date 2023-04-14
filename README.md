@@ -1,27 +1,35 @@
 ### Langchain Typescript AI decorators
 
-This is a quick experiment to write AI functions using decorators in Typescript. 
+This is a quick experiment to write AI functions using decorators in Typescript.
 
-The main idea is to be able write this directly in your code base 
+The main idea is to be able write this directly in your code base
 
 ```typescript
     @AiFn({
-        template: 'I really want to travel to {city} in {country}. What should I do there? Respond in one short sentence',
-        inputVariables: ['city', 'country']
-    })
-    async whatToVisit(city: string, country: string): AiFnOutput<string> {
-    }
+    template: 'I really want to travel to {city} in {country}. What should I do there? Respond in one short sentence',
+    inputVariables: ['city', 'country']
+})
+async
+whatToVisit(city
+:
+string, country
+:
+string
+):
+AiFnOutput < string > {}
 ```
 
 The implementation will be included through Typescript's decorator feature.
 
-You can then call the code simply doing : 
+You can then call the code simply doing :
 
 ```typescript
-const result = await t.whatToVisit('Rome','Italy')
+const result = await t.whatToVisit('Rome', 'Italy')
 console.log(result);
 ```
-It should output 
+
+It should output
+
 ```text
 Visit the Colosseum, Vatican City, and eat authentic Italian cuisine.
 ```
@@ -32,12 +40,21 @@ Visit the Colosseum, Vatican City, and eat authentic Italian cuisine.
 npm install
 ```
 
-Copy .env.example to .env and add your OPENAI_API_KEY 
+Copy .env.example to .env and add your OPENAI_API_KEY
 
+## Using the decorators in your project
 
-## Examples 
+```shell
+npm install "@plosson/langchain-ai-functions"
+```
 
-There is an example in the tests folder that can be executed using 
+```typescript
+import {AiFn, AiFnOutput} from "@plosson/langchain-ai-functions";
+```
+
+## Examples
+
+There is an example in the tests folder that can be executed using
 
 ```sh
 npm run example 

@@ -3,10 +3,10 @@
   "display": "Node 18",
   "compilerOptions": {
     "lib": [
-      "ES2020"
+      "ES2016"
     ],
     "module": "commonjs",
-    "target": "ES2020",
+    "target": "ES2016",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "experimentalDecorators": true,
