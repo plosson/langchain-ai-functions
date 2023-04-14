@@ -1,4 +1,4 @@
-import {AiFn, AiFnOutput} from "../src/decorators";
+import {AiFn, AiFnOutput} from "../src";
 
 export type CorrectOutput = {
     bad_string: string,

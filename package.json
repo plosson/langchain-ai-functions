@@ -2,21 +2,22 @@
   "name": "ai-decorators",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "example": "ts-node tests/index.ts"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "ts-node": "^10.9.1",
-    "typescript": "^5.0.4"
+    "build": "tsc",
+    "test": "ts-node src/index.ts"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
     "langchain": "^0.0.55",
-    "minimatch": "^9.0.0",
     "openai": "^3.2.1"
-  }
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
