@@ -3,13 +3,14 @@
   "display": "Node 18",
   "compilerOptions": {
     "lib": [
-      "es2022"
+      "ES2020"
     ],
     "module": "commonjs",
-    "target": "es2022",
-    "strict": true,
+    "target": "ES2020",
     "esModuleInterop": true,
     "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "dist",
     "declaration": true
