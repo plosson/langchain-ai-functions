@@ -13,6 +13,19 @@ The main idea is to be able write this directly in your code base
     }
 ```
 
+The implementation will be included through Typescript's decorator feature.
+
+You can then call the code simply doing : 
+
+```typescript
+const result = await t.whatToVisit('Rome','Italy')
+console.log(result);
+```
+It should output 
+```text
+Visit the Colosseum, Vatican City, and eat authentic Italian cuisine.
+```
+
 ## Project Setup
 
 ```sh
